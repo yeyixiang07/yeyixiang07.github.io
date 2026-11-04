@@ -5,7 +5,7 @@
 
 - 线上站点：`https://yeyixiang07.github.io`
 - 仓库：`https://github.com/yeyixiang07/yeyixiang07.github.io`
-- 本地仓库：`C:\Users\yeyix\Documents\GitHub\yeyixiang07.github.io`
+- 本地仓库：克隆到本机任意目录；以下命令均假设当前目录是仓库根目录
 - 发布方式：push 到 `main` → `.github/workflows/deploy.yml` → GitHub Pages
 
 ---
@@ -167,16 +167,17 @@ Agent：……
 Quarto 便携版（本机）：
 
 ```powershell
-cd "C:\Users\yeyix\Documents\GitHub\yeyixiang07.github.io"
-C:\Users\yeyix\Documents\GitHub\.tools\quarto\bin\quarto.exe render
+cd <repo-root>
+quarto render
 ```
 
 预览（会占用 4321 端口）：
 
 ```powershell
-C:\Users\yeyix\Documents\GitHub\.tools\quarto\bin\quarto.exe preview --port 4321 --no-browser
+quarto preview --port 4321 --no-browser
 ```
 
+- 若本机的 Quarto 是便携版且未加入 `PATH`，把上面的 `quarto` 替换成其实际可执行文件路径；CI 中由 `quarto-dev/quarto-actions/setup` 安装。
 - 预览是独立进程；如果端口被占用，先结束旧的 `quarto.exe` 再启动。
 - `quarto render` 前最好先停掉预览，避免 `_site` 文件竞争导致 `rename ... NotFound`；报错时删掉 `_site` 重渲染即可。
 - 渲染产物在 `_site/`，已被 `.gitignore` 忽略，不要提交。
