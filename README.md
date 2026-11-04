@@ -31,6 +31,22 @@ git push
 
 推送后 GitHub Actions 自动渲染并发布，通常 1–2 分钟生效。
 
+## 项目页
+
+「项目」页（`projects.qmd`）自动同步 GitHub 上的置顶（Pinned）仓库：
+
+- 每次构建（push / 手动触发 / 每天定时）都会运行 `scripts/fetch_projects.py`；
+- 有置顶仓库时显示置顶项目；没有置顶时显示最近更新的公开仓库，并给出提示；
+- 本地刷新：
+
+```bash
+# 需要本机已登录 gh，或设置 GH_TOKEN
+python scripts/fetch_projects.py
+quarto render
+```
+
+注意：私有仓库即使被置顶，访客也看不到，因此不会出现在页面上。
+
 ## 本地预览
 
 安装 [Quarto](https://quarto.org/docs/get-started/) 后，在本目录运行：
@@ -45,14 +61,16 @@ quarto render      # 全量渲染到 _site/
 - 站点地址：`https://yeyixiang07.github.io`
 - 仓库：`https://github.com/yeyixiang07/yeyixiang07.github.io`
 - 仓库设置：**Settings → Pages → Source = GitHub Actions**
-- 工作流：`.github/workflows/deploy.yml`
+- 工作流：`.github/workflows/deploy.yml`（含每天 03:00 UTC 的定时刷新）
 
 ## 目录
 
 | 路径 | 说明 |
 |---|---|
 | `_quarto.yml` | 站点配置（导航、主题、搜索、字体） |
-| `_styles/zh.scss` | 中文排版与字体 |
+| `_styles/zh.scss` | 中文排版、项目卡片样式 |
 | `blog/index.qmd` | 文章列表（分页、分类、RSS） |
 | `blog/posts/` | 所有文章 |
+| `projects.qmd` | 项目页（脚本生成） |
+| `scripts/fetch_projects.py` | 从 GitHub 同步置顶项目 |
 | `index.qmd` / `about.qmd` | 首页 / 关于 |

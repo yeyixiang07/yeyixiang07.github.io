@@ -1,0 +1,24 @@
+---
+title: 项目
+description: GitHub 置顶项目
+toc: false
+---
+
+这里同步自我 GitHub 上的置顶（Pinned）仓库。我还没有在 GitHub 上置顶仓库，下面是最近更新的公开仓库；在 GitHub 主页置顶仓库后，这个页面会自动切换为置顶项目。
+
+```{=html}
+<div class="project-grid">
+  <a class="project-card" href="https://github.com/yeyixiang07/yeyixiang07.github.io">
+    <div class="project-name"><span>yeyixiang07.github.io</span><span class="project-stars">★ 0</span></div>
+    <p class="project-desc">Ye Yixiang&#x27;s Blog - notes and papers</p>
+    <div class="project-meta">
+    <span class="project-meta-item"><span class="lang-dot" style="background:#8b949e"></span>SCSS</span>
+    <span class="project-meta-item">更新于 2026-11-04</span>
+    </div>
+  </a>
+</div>
+```
+
+::: {.callout-note}
+完整仓库列表见 [GitHub 主页](https://github.com/yeyixiang07?tab=repositories)。
+:::
