@@ -1,0 +1,48 @@
+/*-- scss:defaults --*/
+$font-family-sans-serif: "PingFang SC", "Microsoft YaHei", "Noto Sans SC",
+  "Source Han Sans SC", system-ui, -apple-system, "Segoe UI", sans-serif;
+$font-family-serif: "Songti SC", "Noto Serif SC", "Source Han Serif SC",
+  "SimSun", Georgia, serif;
+$font-family-monospace: "JetBrains Mono", "Cascadia Code", Consolas,
+  "Courier New", monospace;
+
+$headings-font-family: $font-family-serif;
+$font-size-root: 16.5px;
+$line-height-base: 1.8;
+
+/*-- scss:rules --*/
+body {
+  text-rendering: optimizeLegibility;
+}
+
+.quarto-document-content {
+  p,
+  li,
+  blockquote {
+    font-family: $font-family-serif;
+    line-height: 1.9;
+    text-align: justify;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: $font-family-serif;
+    letter-spacing: 0.01em;
+  }
+
+  pre {
+    font-size: 0.9em;
+  }
+}
+
+.quarto-title-block .title {
+  font-family: $font-family-serif;
+  letter-spacing: -0.01em;
+}
+
+.navbar-title {
+  font-family: $font-family-serif;
+  font-weight: 600;
+}

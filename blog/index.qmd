@@ -1,0 +1,12 @@
+---
+title: 博客
+description: 学习笔记、论文阅读与随笔
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  feed: true
+  page-size: 10
+  date-format: "YYYY-MM-DD"
+---

@@ -1,0 +1,6 @@
+_site/
+.quarto/
+_freeze/
+*.log
+.DS_Store
+Thumbs.db
