@@ -46,3 +46,8 @@ body {
   font-family: $font-family-serif;
   font-weight: 600;
 }
+
+/* 文章为空时，隐藏列表的 “无匹配项” 占位提示 */
+.listing-no-matching {
+  display: none !important;
+}
