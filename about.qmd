@@ -4,14 +4,17 @@ title: 关于
 
 ## 简介
 
-Ye Yixiang，四川大学计算机科学与技术专业学生。研究兴趣包括大语言模型、知识图谱与检索增强生成（GraphRAG）。
+Ye Yixiang，四川大学计算机科学与技术专业学生，四川大学游戏开发与研究社会长。研究方向包括知识图谱、GraphRAG 与功能游戏等。
 
-## 这个博客
+## 研究方向
 
-- 使用 [Quarto](https://quarto.org) 构建，托管在 GitHub Pages
-- 文章用 Markdown 编写，数学公式用 LaTeX 语法（MathJax 渲染）
-- 支持浅色 / 深色模式、全文搜索、RSS
-- 源码仓库：[yeyixiang07/yeyixiang07.github.io](https://github.com/yeyixiang07/yeyixiang07.github.io)
+- 知识图谱
+- GraphRAG（基于图结构的检索增强生成）
+- 功能游戏（Serious Games）
+
+## 任职
+
+- 四川大学游戏开发与研究社 · 会长
 
 ## 联系
 

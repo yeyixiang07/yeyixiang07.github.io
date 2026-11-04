@@ -1,7 +1,7 @@
 ---
 title: "Ye Yixiang"
 subtitle: "四川大学 · 计算机科学与技术"
-description: "个人博客：学习笔记、论文阅读与研究随笔。"
+description: "个人主页：知识图谱、GraphRAG 与功能游戏方向的学习与研究记录。"
 listing:
   id: recent
   contents: blog/posts
@@ -9,16 +9,12 @@ listing:
   max-items: 3
 ---
 
-我是四川大学计算机科学与技术专业的学生，关注大语言模型、知识图谱与检索增强生成（GraphRAG）。这个博客用来记录学习笔记、论文阅读和零散想法。
+我是四川大学计算机科学与技术专业学生，四川大学游戏开发与研究社会长。研究方向包括知识图谱、GraphRAG 与功能游戏等。
 
 - [博客](blog/index.qmd)：所有文章，按时间倒序
-- [关于](about.qmd)：简介与联系方式
+- [关于](about.qmd)：简介、研究方向与联系方式
 
 ## 最新文章
 
 ::: {#recent}
 :::
-
-## 这个博客怎么搭的
-
-纯静态站点：[Quarto](https://quarto.org) + GitHub Pages。文章用 Markdown 写，公式用 LaTeX 语法（MathJax 渲染），`git push` 后由 GitHub Actions 自动构建发布。

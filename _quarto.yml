@@ -8,7 +8,7 @@ project:
 
 website:
   title: "Ye Yixiang's Blog"
-  description: "四川大学计算机科学与技术学生 · 学习笔记、论文阅读与研究随笔"
+  description: "四川大学计算机科学与技术学生 · 知识图谱、GraphRAG 与功能游戏"
   site-url: "https://yeyixiang07.github.io"
   repo-url: "https://github.com/yeyixiang07/yeyixiang07.github.io"
   repo-branch: main
