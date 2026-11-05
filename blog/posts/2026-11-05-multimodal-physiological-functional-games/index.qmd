@@ -2,7 +2,7 @@
 title: "功能游戏中EEG/ERP、GSR/ECG与眼动的多模态融合及同步、时间尺度与评估"
 description: "功能游戏把训练、康复与评估嵌入游戏循环，也使脑电、皮电、心电与眼动的同时记录成为常态。本文围绕同步、时间尺度与评估三个方法学问题，梳理三组模态融合的证据与工程路径，主张以统一时间轴、多分辨率切窗与混合融合作为可复现的默认方案。"
 date: 2026-11-05
-categories: [功能游戏, 多模态融合, 生理计算]
+categories: [功能游戏]
 tags: [EEG, GSR, ECG, 眼动, 时间同步]
 bibliography: refs.bib
 csl: ieee.csl
