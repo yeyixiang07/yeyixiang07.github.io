@@ -19,8 +19,7 @@
 ├── index.qmd / about.qmd       # 首页 / 关于
 ├── projects.qmd                # 项目页（脚本生成，勿手改）
 ├── scripts/
-│   ├── fetch_projects.py       # 同步 GitHub 置顶仓库 → projects.qmd
-│   └── make_figures.py         # 生成本文两张概念图（SVG + PNG）
+│   └── fetch_projects.py       # 同步 GitHub 置顶仓库 → projects.qmd
 ├── blog/
 │   ├── index.qmd               # 文章列表（分页、分类、RSS）
 │   └── posts/
@@ -227,13 +226,8 @@ git push
 
 ---
 
-## 11. 项目页与图生成脚本
+## 11. 项目页脚本与配图
 
 - `projects.qmd` 由 `scripts/fetch_projects.py` 生成，**不要手改**；GitHub Actions 每天 03:00 UTC 自动同步置顶仓库。
-- 文章配图由 `scripts/make_figures.py` 生成（matplotlib；需要本机安装 matplotlib）。改图后运行：
-
-```powershell
-python scripts\make_figures.py
-```
-
-脚本会覆盖 `figures/fig1-framework.{svg,png}` 与 `figures/fig2-risk-matrix.{svg,png}`，然后重新渲染文章。
+- 文章配图（`figures/` 下的 SVG + PNG）用**一次性本地脚本**生成（matplotlib，需本机安装），**脚本不提交**，出图后删除；仓库只保留 SVG（文字转路径）与 PNG 备份。
+- 改图时：临时写脚本重新导出同名文件 → 覆盖 `figures/` 下对应文件 → 重新渲染文章检查。不要在仓库里维护常驻的画图脚本，也不要让不同文章的图共用同一个输出路径。
