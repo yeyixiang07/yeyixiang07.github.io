@@ -1,7 +1,7 @@
 ---
 title: "Ye Yixiang"
 subtitle: "四川大学 · 计算机科学与技术"
-description: "个人主页：知识图谱、GraphRAG 与功能游戏方向的学习与研究记录。"
+description: "“人的非理性，是自由意志最后的藏身之处”"
 listing:
   id: recent
   contents: blog/posts
@@ -10,7 +10,6 @@ listing:
 ---
 
 四川大学计算机科学与技术专业学生，四川大学游戏开发与研究社团会长。  
-*“人的非理性，是自由意志最后的藏身之处”*
 
 - 研究方向：知识图谱 / GraphRAG / 功能游戏
 - 开发兴趣：独立游戏 / 游戏研发辅助工具 / 游戏智能体
