@@ -8,7 +8,7 @@ bibliography: refs.bib
 csl: ieee.csl
 ---
 
-![Rule IR 与既有验证工具及逻辑记号的关系示意：F*、Coq、Isabelle/HOL、TLA+、NuSMV、Z3、CVC5、PRISM、Boogie、KeY、ACL2 等系统名称环绕图心，间以正规模态逻辑的分配公理、最弱前置条件 $wp(S, Q)$ 与一阶公式等记号（概念图，非实验数据）](figures/fig1-rule-ir-ecosystem.png){#fig-rule-ir-ecosystem width=100% fig-alt="以 RULE IR 字样为中心的图形，四周散落 F*、Coq、Isabelle/HOL、TLA+、NuSMV、Z3、CVC5、PRISM、Boogie、KeY、ACL2 等验证工具名称，以及分配公理、最弱前置条件与一阶公式等逻辑记号"}
+![Rule IR 的用法主线：从义务到可复核结论）](figures/fig1-rule-ir-ecosystem.png){#fig-rule-ir-ecosystem width=100% fig-alt="Rule IR 的用法主线：从义务到可复核结论"}
 
 ## 摘要
 
