@@ -8,6 +8,8 @@ bibliography: refs.bib
 csl: ieee.csl
 ---
 
+![Rule IR 与既有验证工具及逻辑记号的关系示意：F*、Coq、Isabelle/HOL、TLA+、NuSMV、Z3、CVC5、PRISM、Boogie、KeY、ACL2 等系统名称环绕图心，间以正规模态逻辑的分配公理、最弱前置条件 $wp(S, Q)$ 与一阶公式等记号（概念图，非实验数据）](figures/fig1-rule-ir-ecosystem.png){#fig-rule-ir-ecosystem width=100% fig-alt="以 RULE IR 字样为中心的图形，四周散落 F*、Coq、Isabelle/HOL、TLA+、NuSMV、Z3、CVC5、PRISM、Boogie、KeY、ACL2 等验证工具名称，以及分配公理、最弱前置条件与一阶公式等逻辑记号"}
+
 ## 摘要
 
 Rule IR 把证明边是否可采纳归约为 IR 程序在判定引擎上的可满足性查询。本文以用法为主线，说明如何按义务选择 S0 或 S1、声明符号与边界、编写公理与规则模式、通过类型检查、登记假设并归约查询，再把判定结果映射为义务状态。文中用合法程序、展开公理、失败片段与结论记录等代码示例串联各环节，并区分直接依据规范文本的规则与仍需工程检验的做法。读者可据此判断一条边何时具备被检查资格，以及何时应返回不支持而非失败。
