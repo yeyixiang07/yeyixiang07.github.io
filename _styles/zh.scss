@@ -52,6 +52,27 @@ body {
   display: none !important;
 }
 
+/* ---------- 正文重点框（::: {.keynote}） ---------- */
+.keynote {
+  margin: 1.9rem 0;
+  padding: 0.95rem 1.2rem 0.95rem 1.25rem;
+  border-left: 3px solid #2f6f6b;
+  border-radius: 0 3px 3px 0;
+  background: rgba(47, 111, 107, 0.07);
+}
+
+.quarto-document-content .keynote p {
+  margin-bottom: 0;
+  font-size: 0.97em;
+  line-height: 1.85;
+}
+
+.quarto-dark .keynote,
+[data-bs-theme="dark"] .keynote {
+  border-left-color: #5f9e99;
+  background: rgba(120, 190, 185, 0.09);
+}
+
 /* ---------- 项目卡片（projects.qmd，由 scripts/fetch_projects.py 生成） ---------- */
 .project-grid {
   display: grid;
